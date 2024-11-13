@@ -9,13 +9,14 @@ async function getCountry(name) {
 }
 
 export default async function Countries({ params }) {
-  const countries = await getCountry(params.name);
+  const { name } = await params;
+  const countries = await getCountry(name);
   return (
     <>
-      <h1>Country name: {params.name}</h1>
       <ul>
         {countries.map((country, idx) => (
           <li key={idx}>
+            <h1>Country name: {country.name.common}</h1>
             <Image
               src={country.flags.svg}
               alt={country.flag + " flag"}
