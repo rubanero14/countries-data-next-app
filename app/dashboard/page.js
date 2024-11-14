@@ -1,5 +1,6 @@
-import { colors } from "@material-ui/core";
 import Image from "next/image";
+import styles from "./page.module.css";
+import Link from "next/link";
 
 // Helper function to get countries list
 async function getCountries() {
@@ -11,23 +12,24 @@ async function getCountries() {
 
 export default async function Dashboard() {
   const countries = await getCountries();
-
   return (
-    <>
-      <h1>Dashboard</h1>
-      <ul>
+    <div className="wrapper">
+      <h1>List of Countries</h1>
+      <ul className={styles.countriesList}>
         {countries.map((country, idx) => (
-          <li key={idx}>
-            <Image
-              src={country.flags.svg}
-              alt={country.flag + " flag"}
-              width={270}
-              height={150}
-            />
-            <span>{country.name.common}</span>
+          <li className="mb-3" key={idx}>
+            <Link href={"/countries/" + country.cca2}>
+              <Image
+                src={country.flags.svg}
+                alt={country.flag + " flag"}
+                width={270}
+                height={150}
+              />
+              <div>{country.name.common}</div>
+            </Link>
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 }

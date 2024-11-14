@@ -27,6 +27,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.wrapper {
+  margin: 3rem auto;
+  padding: 0 20px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
