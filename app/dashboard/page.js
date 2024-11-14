@@ -13,7 +13,7 @@ async function getCountries() {
 export default async function Dashboard() {
   const countries = await getCountries();
   return (
-    <div className="wrapper">
+    <div className="wrapper px-3">
       <h1>List of Countries</h1>
       <ul className={styles.countriesList}>
         {countries.map((country, idx) => (

@@ -15,7 +15,7 @@ export default async function Countries({ params }) {
   const { name } = await params;
   const countries = await getCountry(name);
   return (
-    <div className="wrapper">
+    <div className="wrapper px-2">
       <ul className={styles.countriesList}>
         {countries.map((country, idx) => (
           <li
