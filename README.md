@@ -3,6 +3,7 @@ This is test result for https://github.com/H45Tech/front-end-test
 To test this application, please follow the instruction:
 
 Routes:
+<br />
 Login: "/" or "/login"
 <br />
 Dashboard: "/dashboard"
