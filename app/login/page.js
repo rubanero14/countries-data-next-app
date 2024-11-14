@@ -39,6 +39,7 @@ export default function Login() {
             "btn btn-light w-100 " + (!enableSubmit ? styles.linkDisabled : "")
           }
           disabled={!enableSubmit}
+          aria-disabled={!enableSubmit ? true : false}
         >
           Login
         </Link>
