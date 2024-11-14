@@ -4,7 +4,9 @@ To test this application, please follow the instruction:
 
 Routes:
 Login: "/" or "./login"
+<br />
 Dashboard: "/dashboard"
+<br />
 Details: "/countries/{countryCode}" // eg: MY / SG / US and etc
 
 ```
