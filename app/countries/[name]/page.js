@@ -44,12 +44,15 @@ export default async function Countries({ params }) {
                   Google Maps
                 </Link>
                 <Link
-                  className="btn btn-sm btn-success w-100"
+                  className="btn btn-sm btn-success mb-2 w-100"
                   target="_blank"
                   href={country.maps.openStreetMaps}
                 >
                   {" "}
                   Open Street Maps{" "}
+                </Link>
+                <Link className="btn btn-sm btn-light w-100" href="/dashboard">
+                  Back
                 </Link>
               </li>
             </ul>

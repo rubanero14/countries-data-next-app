@@ -30,6 +30,9 @@ export default async function Dashboard() {
           </li>
         ))}
       </ul>
+      <Link href="/login" className="btn btn-light">
+        Logout
+      </Link>
     </div>
   );
 }
