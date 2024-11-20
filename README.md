@@ -12,7 +12,7 @@ Details: "/countries/{countryCode}" // eg: MY / SG / US and etc
 
 ```
 git clone https://github.com/rubanero14/countries-data-next-app.git
-cd /countries-data-next-app/
+cd countries-data-next-app
 npm install
 npm run dev
 ```
